@@ -14,13 +14,21 @@ Add the following to your telegraf.conf file (/etc/telegraf/telegraf.conf)
 
 
 #veSync monitoring
+
 [[inputs.exec]]
+
     commands = ["/home/pi/GetVeSync.py"]
+    
     timeout = "20s"
+    
     data_format = "json"
+    
     name_suffix = ""
+    
     json_name_key = "name"
+    
     tag_keys = ["DeviceName","Type"]
+    
 
 
 
