@@ -22,3 +22,10 @@ Add the following to your telegraf.conf file (/etc/telegraf/telegraf.conf)
     json_name_key = "name"
     tag_keys = ["DeviceName","Type"]
 
+
+
+Need to install VeSync plugin for Python
+Sudo pip install pyvesync
+
+https://pypi.org/project/pyvesync/
+
