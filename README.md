@@ -29,3 +29,5 @@ Sudo pip install pyvesync
 
 https://pypi.org/project/pyvesync/
 
+
+Data is installed into the vesync table into InfluxDB. I've setup Grafana to chart out power usage for my outlets.
