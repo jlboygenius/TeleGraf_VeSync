@@ -35,7 +35,8 @@ Add the following to your telegraf.conf file (/etc/telegraf/telegraf.conf)
 Need to install VeSync plugin for Python
 Sudo pip install pyvesync
 
-https://pypi.org/project/pyvesync/
 
+https://pypi.org/project/pyvesync/
+NOTE: There is a bug in the way that pyvesync (as of feb2019) computes current power usage. A pull request exists on the library that fixes the bug. Be sure to use the code from the pull request. Using PIP install will not pull in the correct code. 
 
 Data is installed into the vesync table into InfluxDB. I've setup Grafana to chart out power usage for my outlets.
